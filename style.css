@@ -1,4 +1,26 @@
 .header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  background-color: rgb(62, 191, 255);
+  color: white;
+  width: 100%;
+  min-width: 375px;
+  height: 50px;
+  font-size: 2rem;
+}
+.header-container-logo {
+  font-family: "Barlow", sans-serif;
+}
+.header-container-nav {
+  /* background-color: brown; */
+  width: 10%;
+  height: 100%;
+}
+
+.header-container-nav::before {
+  content: "cualddddd";
+  width: 100px;
+  height: auto;
 }
