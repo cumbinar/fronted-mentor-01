@@ -133,16 +133,9 @@ body{
 .arrow{
   width: 4rem;
   height: 12rem;
-
-
 }
 
-/*.section1-container{*/
-/*  display: flex;*/
-/*  !*height: 60rem;*!*/
-/* justify-content: center;*/
-/*  flex-direction: column;*/
-/*}*/
+
 .section1-container h1{
 
   padding-top: 18rem;
@@ -161,61 +154,37 @@ body{
   align-items: center;
 }
 
+
 .modelo-x{
-  width: 111%;
-  height: 60rem;
   background-image: url("/images/mobile/image-header.jpg");
+ width: 100%;
+  height: 60rem;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgb(62,191,255);;
+}
+@media(min-width: 768px){
+  .modelo-x{
+    background-image: url("/images/desktop/image-header.jpg");
+    width: 150%;
+    /*height: 70rem;*/
+  }
+  .arrow{
+    width: 4rem;
+    height: 18rem;
+  }
 }
 
-/*.modelo{*/
-/*  display: flex;*/
-/*  min-height: 60rem;*/
-/*  background-size: 60rem;*/
-/*  background-position: center;*/
-/*  margin-top: 0;*/
-/*  margin-bottom: 2rem;*/
-/*  flex-direction: column;*/
-/*  align-items: center*/
-/*}*/
-
-
-/*.modelo-x{*/
-/*  background-image: url("/images/mobile/image-header.jpg");*/
-/*  max-width: 100%;*/
-/*  height: auto;*/
-/*  background-repeat: no-repeat;*/
-/*}*/
-/*COMIENZA RESPONSIVE IMAGEN FONDO*/
-/*@media(min-width: 768px){*/
-
-/*  .modelo{*/
-/*    min-height: 60rem;*/
-/*    background-size: 110rem;*/
-/*    background-position: center;*/
-/*    margin-bottom: 0;*/
-/*    flex-direction: column;*/
-/*    align-items: center*/
-/*  }*/
-
-/*  .modelo-x{*/
-/*    background-image: url("/images/desktop/image-header.jpg");*/
-/*  }*/
-
-/*  .section1-container h1{*/
-/*    padding-top: 10rem;*/
-/*    padding-bottom: 5.5rem;*/
-/*    font-family: "Fraunces";*/
-/*    font-size: 4.5rem;*/
-/*    font-weight: 900;*/
-/*    color: white;*/
-/*    text-align: center;*/
-/*  }*/
-
-/*}*/
-
-/*TERMINARESPONSIVE IMAGEN FONDO*/
+@media(min-width: 1280px){
+  .modelo-x{
+    background-image: url("/images/desktop/image-header.jpg");
+    width: 100%;
+  }
+  .arrow{
+    width: 4rem;
+    height: 22rem;
+  }
+}
 
 /*COMIENZA SECCIÓN-2*/
 
