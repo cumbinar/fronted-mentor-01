@@ -1,0 +1,181 @@
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@100;700;900&display=swap');
+
+/*CSS RESET*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*REM -> Medida RELATIVA que toma como referencia la medida que trae el HTML. Si la medida de la fuente de un párrafo heredada de HTML es 16px, un rem entonces mide eso, 16px. Tip: Para facilitar el uso de la medida REM, podemos darle a HTML un font-size de 62.5%. Así 1rem equivaldrá a 10px .*/
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+body{
+    font-family: "Barlow", sans-serif;
+}
+
+/* INICIO  HEADER*/
+.contenedor-nav{
+    display: flex;
+    background-color: rgb(62,191,255);
+    color: lightcyan;
+    justify-content: space-between;
+    align-items: center; /*centra verticalmente*/
+}
+
+/*NAVIGATION*/
+.contenedor-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container-logo{
+    width: 8rem;
+    margin-left:1.5rem ;
+    font-family: "Barlow", sans-serif;
+    font-size: 1.5rem;
+    color: lightcyan;
+    /*margin-top: 20px;*/
+}
+
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    /*height: 100vh; !*antes de ocultarlo*!*/
+    height: 0;
+    top: 5rem;
+    /*background: rgba(0, 0, 0, .95);*/
+    text-align: center;
+    transition: all .5s;
+}
+.bar-btn{
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.arrow{
+    font-size: 20rem;
+}
+.nav-menu li{
+    /*display: block; !*antes de ocultar*!*/
+    display: none;
+    line-height: 3rem;
+    margin: 3rem 0;
+    transition: all.5s;
+}
+.nav-menu li a{
+    color: lavender;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.nav-menu li a.active, .nav-menu li a:hover{
+    color: black;
+    background-color: hsl(51, 100%, 49%);
+    border-radius: 1rem;
+    padding: .4rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#check{
+    display: none; /*oculta el check-btn*/
+}
+
+#check:checked ~ .nav-menu{
+    height: 100%;
+}
+#check:checked ~ .nav-menu li{
+    display: block;
+}
+
+/* INICIO  HEADER*/
+@media(min-width: 768px){
+    /* INICIO  HEADER*/
+    .logo{
+        margin-left: 5rem;
+    }
+
+    .bar-btn{
+        display:none;
+    }
+    .nav-menu{
+        position: relative;
+        height: 5rem;
+        top: 2rem; /*separa desde la parte superior*/
+        text-align: right;
+        margin-right: 5rem;
+    }
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100%;
+        margin: 0 2rem;
+        transition: none;
+    }
+    .nav-menu li a{
+        font-size: 1.6rem;
+    }
+    .nav-menu li a.active, .nav-menu li a:hover{
+        background-color: lavender;
+
+    } /* TERMINA  HEADER*/
+
+}
+   /*SECCIÓN 1*/
+   /* .img{*/
+   /*     max-width: 100%;*/
+   /*     height: auto;*/
+   /*     }*/
+
+    /*.section1-container{*/
+    /*    display: grid;*/
+    /*    grid-row: 1fr;*/
+    /*    text-align: center;*/
+    /*}*/
+.section1-container{
+    height: 60rem;
+
+}
+.section1-container h1{
+    padding-top: 10rem;
+    font-family: "Fraunces";
+    font-weight: 600;
+    color: lavender;
+}
+
+.section1-container i{
+    font-size: 20rem;
+    color: lavender;
+    font-weight: 600;
+}
+
+
+.modelo{
+    display: flex;
+    min-height: 60rem;
+    background-size: 60rem;
+    background-position: center;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: center
+}
+
+
+.modelo-x{
+    background-image: url("/images/mobile/image-header.jpg");
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
