@@ -191,7 +191,7 @@ body{
 .section2-container{
   display: grid;
   grid-template-rows: auto;
-  margin-bottom: 5rem;
+  margin-bottom: 0;
   gap: 3fr;
 }
 .section2-img{
@@ -318,4 +318,54 @@ body{
     background-size: cover;
   }
 }
+/*!*COMIENZA SECTION-3*!*/
 
+.section3-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fffbf8;
+}
+.section3-container h2{
+  font-size: 2rem;
+  font-family: "Fraunces";
+  text-align: center;
+  color: darkgray;
+  padding-top: 3rem;
+}
+.img-circulo{
+  border-radius: 50%;
+}
+.marco-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.marco-center p{
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  text-align: center;
+}
+.marco-center h4{
+  font-size: 2.3rem;
+  font-family: "Fraunces";
+  padding: 1rem 0;
+}
+
+.p1{
+ font-size: 8rem;
+  color: darkgrey;
+}
+
+@media(min-width: 768px){
+  .marco-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .marco-center p{
+    font-size: 1.2rem;
+  }
+}
