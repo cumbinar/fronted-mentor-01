@@ -160,7 +160,8 @@ body{
   height: 60rem;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgb(62,191,255);;
+  background-color: rgb(62,191,255);
+  background-position: center center;
 }
 @media(min-width: 768px){
   .modelo-x{
@@ -204,6 +205,12 @@ body{
 .section2-container{
   text-align: center;
 }
+
+@media(min-width: 768px){
+  .section2-container{
+    text-align: left;
+  }
+}
 .section2-container h2{
   font-family: "Fraunces";
   font-size: 3.5rem ;
@@ -245,6 +252,7 @@ body{
   background-image: url("/images/mobile/image-graphic-design.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 .fondo-y{
@@ -253,6 +261,7 @@ body{
   background-image: url("/images/mobile/image-photography.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 .flex-center h3{
